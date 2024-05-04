@@ -1,4 +1,17 @@
-#HareKrsna
+
+# Program to train the model.
+#
+# Usage :-
+# python train_model.py <source_folder_name> 
+#
+# Example :
+# python train_model.py p1_chars_dataset
+#
+# The program trains the model, and the model will be saved as 'model_output.h5'.
+
+# Code inspired by assistance from ChatGPT
+# OpenAI GPT-3.5 model trained by OpenAI
+# https://openai.com
 
 # Load dataset
 import os

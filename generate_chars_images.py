@@ -1,14 +1,17 @@
-#HareKrsna
 
 # Generate Character dataset from a given image.
 # The program automatically generates a list of characters from a given image
-# The input Image should be a picture of document with handwritten characters.
+# Usage :-
+# python generate_chars_images.py <input_image_filename> <destnation_folder>
+#
+# Example :-
+# python preprocess_images.py page_12.jpg page12_chars 
+#
+# The program automatically generates a list of characters from a given image and saves them to the destination folder.
 
-# It is observed that instead of extracting characters and then applying preprocessing,
-# Preprocessing can be performed to the full document image and then extract characters.
-
-# https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html
-# The above link has good example demonstrations which can be very useful for preprocessing.
+# Code inspired by assistance from ChatGPT
+# OpenAI GPT-3.5 model trained by OpenAI
+# https://openai.com
 
 import cv2
 import os

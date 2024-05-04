@@ -1,12 +1,15 @@
-#HareKrsna
 
 # Program to take input character images and standardize them to a given standard size images.
 # It will be helpful to load them and process them in AI/ML model training.
-#
+
 # Usage : get_std_size_images.py <source_folder_name> <destination_folder_name>
-#
+
 # Example :
 # python get_std_size_images.py divya_numerals_chars divya_numerals_chars_dataset
+
+# Code inspired by assistance from ChatGPT
+# OpenAI GPT-3.5 model trained by OpenAI
+# https://openai.com
 
 import os
 import cv2

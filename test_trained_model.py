@@ -1,31 +1,14 @@
-#HareKrsna
 
-# Program to load a tensorflow model and test it.
+# Program to load a tensorflow model and test it with a given input character image.
+# Usage :-
+# python test_trained_model.py <input_image_filename> 
+#
+# Example :-
+# python test_trained_model.py character90.jpg 
 
-# import cv2
-# import numpy as np
-# import tensorflow as tf
-# from tensorflow.keras.models import load_model
-# import argparse
-
-# # Load an image for prediction
-# image = cv2.imread('Bhanu_Numerals_1.jpg', cv2.IMREAD_GRAYSCALE)
-
-# # Preprocess the image (if necessary)
-# # Resize, normalize, etc.
-
-# # Load the model
-# loaded_model = load_model('model_output.h5')
-
-# # Make predictions using the loaded model
-# # Assuming 'loaded_model' is the loaded model
-# # Ensure the input shape matches the model's input shape
-# input_image = np.expand_dims(image, axis=0)  # Add batch dimension if necessary
-# prediction = loaded_model.predict(input_image)
-
-# # Process the prediction results as needed
-# # For example, get the predicted class label
-# predicted_class = np.argmax(prediction)
+# Code inspired by assistance from ChatGPT
+# OpenAI GPT-3.5 model trained by OpenAI
+# https://openai.com
 
 import cv2
 import numpy as np

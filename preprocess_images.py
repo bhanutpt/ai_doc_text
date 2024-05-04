@@ -1,4 +1,3 @@
-#HareKrsna
 
 # Program to preprocess the images, prepare the images for character extraction.
 # make sure to keep the input documents in a folder.
@@ -8,14 +7,15 @@
 # python preprocess_images <source_folder> <destnation_folder>
 #
 # Example :-
-# python preprocess_images 
+# python preprocess_images.py src_images out_images 
+
+# Code inspired by assistance from ChatGPT
+# OpenAI GPT-3.5 model trained by OpenAI
+# https://openai.com
 
 import cv2
 import os
-#from PIL import Image
-#import numpy as np
-import argparse#
-
+import argparse
 
 def apply_adaptive_threshold(image_path, block_size, constant):
     # Read the image
@@ -60,9 +60,6 @@ if __name__ == "__main__":
     parser.add_argument("source_folder", help="Path to the folder containing input images")
     parser.add_argument("dest_folder", help="Path to the folder where the output images will be saved")
     args = parser.parse_args()
-
-    # Step 1: Preprocess the main input image of the document.
-    # Apply adaptive thresholding to biniraze the image
-    
+   
     # Preprocess images
     preprocess_images(args.source_folder, args.dest_folder)
